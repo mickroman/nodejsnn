@@ -1,16 +1,23 @@
+function callFunction(fun){
+    fun();
+}
+//normal function statement
+function sayHi(){
+    console.log('hi');
+    
+}
 
+sayHi();
 
+//function expression
 
-console.log(--dirname);
-console.log(--filename);//console.log("Hey Ninjas");
-var time =0;
+var sayBye = function(){
+    console.log('bye');
+};
 
-setInterval(function(){
-    time +=2;
-    console.log(time + 'seconds have passed');
-}, 2000);
+sayBye();
 
-
+callFunction(sayBye);
 
 
 
