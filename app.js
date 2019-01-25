@@ -1,7 +1,5 @@
 var fs = require('fs'); 
-fs.readFile('readMe.txt','utf8', function(err, data){
- console.log(data);   
+fs.unlink('./stuff/writeMe.txt', function(){
+fs.rmdir('stuff');
+
 });
-
-
-console.log('test');
